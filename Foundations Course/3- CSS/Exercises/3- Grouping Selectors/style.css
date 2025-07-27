@@ -1,0 +1,16 @@
+.btn{
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.clickme{
+    color: #fff;
+    background-color: #000;
+}
+
+.dontclick{
+    color: #000;
+    background-color:gold;
+}

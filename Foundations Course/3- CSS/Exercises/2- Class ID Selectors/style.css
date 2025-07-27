@@ -1,0 +1,20 @@
+.number1{
+    background-color: coral;
+    font-size: 30px;
+}
+
+#number2{
+    color: blue;
+    font-size: 20px;
+}
+
+.number3{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#number4{
+    background-color: chartreuse;
+    font-weight: bold;
+    font-size: 20px;
+}
