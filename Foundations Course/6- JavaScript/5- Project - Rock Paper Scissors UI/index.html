@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- ...existing code... -->
+    <style>
+        body { font-family: system-ui, Arial; padding: 2rem; }
+        .choices { display: flex; gap: 1rem; margin-bottom: 1rem; }
+        button.choice { padding: .5rem 1rem; font-size: 1rem; cursor: pointer; }
+        #result { margin-top: 1rem; white-space: pre-wrap; }
+        #score { font-weight: bold; margin-top: .5rem; }
+    </style>
+</head>
+<body>
+    <!-- UI controls -->
+    <div class="choices">
+        <button id="rock" class="choice" data-choice="rock">Rock</button>
+        <button id="paper" class="choice" data-choice="paper">Paper</button>
+        <button id="scissors" class="choice" data-choice="scissors">Scissors</button>
+        <button id="reset" class="choice" style="margin-left: 1rem;">Reset</button>
+    </div>
+
+    <div id="score">You: 0 — Computer: 0</div>
+    <div id="result">Make your move by clicking a button.</div>
+
+    <!-- script loaded with defer so DOM is ready -->
+    <script src="game.js" defer></script>
+</body>
+</html>
