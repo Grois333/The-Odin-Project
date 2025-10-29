@@ -1,0 +1,52 @@
+/* Basic layout and centering */
+:root{
+    --container-size: 960px; /* total sketchpad size */
+}
+*{box-sizing: border-box;}
+html,body{
+    height:100%;
+    margin:0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:#f3f4f6;
+    color:#111827;
+}
+header{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    justify-content:center;
+    padding:18px;
+}
+#resize-btn{
+    padding:8px 12px;
+    cursor:pointer;
+    border:1px solid #d1d5db;
+    background:white;
+    border-radius:6px;
+}
+main{
+    display:flex;
+    justify-content:center;
+    padding:18px;
+}
+
+/* Grid container uses flexbox and wraps to form rows */
+#grid-container{
+    width:var(--container-size);
+    height:var(--container-size);
+    display:flex;
+    flex-wrap:wrap; /* squares will wrap to create rows */
+    align-content:flex-start;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    /* remove default gap/margins so sizing is exact */
+}
+
+/* each square: no margin/border to avoid altering size calculation */
+.grid-square{
+    /* width/height set inline via JS to ensure correct number per side */
+    background: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+}
